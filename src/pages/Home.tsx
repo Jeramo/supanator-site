@@ -98,12 +98,9 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button variant="hero" size="xl" className="text-lg">
               Download on App Store
-            </Button>
-            <Button variant="outline" size="xl" className="text-lg">
-              View Demo
             </Button>
           </div>
         </div>
