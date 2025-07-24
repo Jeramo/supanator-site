@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import FeatureCard from "@/components/FeatureCard";
 import { Shield, Database, Zap, Key, Smartphone, Palette } from "lucide-react";
-import supanatorIcon from "@/assets/supanator-icon.png";
+import supanatorIcon from "@/assets/placeholder.svg";
 
 const Home = () => {
   const features = [
