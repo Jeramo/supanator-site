@@ -1,0 +1,188 @@
+# Terms of Service for Supanator
+
+**Effective Date: July 19, 2025 (2025-07-19)**
+
+## 1. Agreement to Terms
+
+By downloading, installing, or using Supanator ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you disagree with any part of these terms, you do not have permission to use the App.
+
+## 2. Description of Service
+
+Supanator is an independent iOS application that provides a mobile interface for managing Supabase projects. The App is not affiliated with, endorsed by, or officially connected to Supabase Inc. in any way.
+
+## 3. Eligibility
+
+- You must be at least 13 years old to use this App
+- You must have the legal authority to enter into these Terms
+- You must not be barred from using the App under any applicable laws
+
+## 4. User Accounts and Security
+
+### 4.1 API Credentials
+- You are responsible for maintaining the confidentiality of your API tokens
+- You are responsible for all activities that occur using your credentials
+- You must notify us immediately of any unauthorized use
+- We are not liable for any loss or damage from your failure to protect your credentials
+
+### 4.2 Accurate Information
+- You agree to provide accurate and complete information
+- You are responsible for the legality and ownership of the API tokens you use
+
+## 5. Acceptable Use Policy
+
+You agree NOT to:
+- Use the App for any illegal or unauthorized purpose
+- Violate any laws in your jurisdiction
+- Transmit any malicious code, viruses, or destructive content
+- Attempt to gain unauthorized access to any systems
+- Use the App to harm or exploit any person or entity
+- Reverse engineer or attempt to extract the source code
+- Remove any proprietary notices from the App
+- Use the App to access Supabase projects you don't own or have permission to access
+
+## 6. Intellectual Property
+
+### 6.1 App Ownership
+- The App and its original content remain the property of the developer
+- These Terms do not grant you any rights to use the Supanator name or branding
+
+### 6.2 Your Content
+- You retain all rights to your data and content
+- We claim no ownership over your Supabase projects or data
+
+## 7. Subscriptions and Payments
+
+### 7.1 In-App Purchases
+- Some features require a paid subscription
+- All payments are processed by Apple
+- Subscription terms are subject to Apple's standard terms
+
+### 7.2 Refunds
+- Refund requests must be directed to Apple
+- We do not control the refund process
+
+## 8. DISCLAIMERS
+
+### 8.1 "AS IS" Service
+THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
+- MERCHANTABILITY
+- FITNESS FOR A PARTICULAR PURPOSE
+- NON-INFRINGEMENT
+- ACCURACY OR RELIABILITY
+
+### 8.2 No Guarantee
+WE DO NOT GUARANTEE THAT:
+- The App will meet your requirements
+- The App will be uninterrupted or error-free
+- Any errors will be corrected
+- The App is free of viruses or harmful components
+
+## 9. LIMITATION OF LIABILITY
+
+### 9.1 No Liability
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE DEVELOPER BE LIABLE FOR:
+- ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES
+- ANY LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES
+- ANY DAMAGES RESULTING FROM:
+  - Your use or inability to use the App
+  - Any unauthorized access to your data
+  - Any interruption or cessation of service
+  - Any bugs, viruses, or errors in the App
+  - Any content obtained from the App
+  - Any unauthorized use of your Supabase projects
+
+### 9.2 Maximum Liability
+OUR TOTAL LIABILITY SHALL NOT EXCEED THE AMOUNT YOU PAID FOR THE APP IN THE PAST 12 MONTHS
+
+## 10. Indemnification
+
+You agree to defend, indemnify, and hold harmless the developer from any claims, damages, obligations, losses, liabilities, costs, or expenses arising from:
+- Your violation of these Terms
+- Your violation of any third-party rights
+- Your use of the App
+- Any damage you cause to third parties
+
+## 11. Third-Party Services
+
+### 11.1 Supabase
+- Your use of Supabase is governed by Supabase's terms and policies
+- We are not responsible for Supabase's services or policies
+- Any issues with Supabase should be directed to Supabase
+
+### 11.2 Other Services
+- The App may contain links to third-party services
+- We are not responsible for third-party content or services
+
+## 12. Modifications to Service
+
+We reserve the right to:
+- Modify or discontinue the App at any time
+- Change features or functionality without notice
+- Update these Terms at any time
+
+## 13. Termination
+
+### 13.1 By You
+You may stop using the App at any time by uninstalling it
+
+### 13.2 By Us
+We may terminate or suspend your access immediately, without notice, for:
+- Violation of these Terms
+- Any conduct we deem inappropriate
+- Any reason at our sole discretion
+
+### 13.3 Effect of Termination
+Upon termination:
+- Your right to use the App ceases immediately
+- Provisions that should survive will remain in effect
+
+## 14. Privacy
+
+Your use of the App is also governed by our Privacy Policy
+
+## 15. Governing Law
+
+These Terms are governed by the laws applicable to contracts formed and performed in the jurisdiction where the App is distributed through the Apple App Store
+
+## 16. Dispute Resolution
+
+### 16.1 Informal Resolution
+We prefer to resolve disputes informally. Please contact us before taking legal action.
+
+### 16.2 Binding Arbitration
+Any disputes shall be resolved through binding arbitration, not in court
+
+### 16.3 Class Action Waiver
+You waive any right to bring claims as a class action
+
+## 17. General Provisions
+
+### 17.1 Entire Agreement
+These Terms constitute the entire agreement between us
+
+### 17.2 Waiver
+Our failure to enforce any provision is not a waiver
+
+### 17.3 Severability
+If any provision is invalid, the remaining provisions continue
+
+### 17.4 Assignment
+You may not assign these Terms without our consent
+
+## 18. Contact Information
+
+For questions about these Terms:
+- GitHub Issues: https://github.com/Jeramo/supanator/issues
+- Through App Store support
+
+## 19. Acknowledgment
+
+BY USING SUPANATOR, YOU ACKNOWLEDGE THAT:
+- You have read and understood these Terms
+- You agree to be bound by these Terms
+- You use the App at your own risk
+- You will not hold the developer liable for any issues
+
+---
+
+**IMPORTANT**: Supanator is an independent tool. The developer assumes no responsibility for any damages, losses, or issues arising from your use of this App. Use at your own risk.

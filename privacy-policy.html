@@ -4,198 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Supanator</title>
-    <meta name="description" content="Privacy Policy for Supanator - The Native Supabase Client for iOS">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/app-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/app-icon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/app-icon.png">
-    
     <link rel="stylesheet" href="styles.css">
     <style>
-        .legal-content {
+        .policy-content {
             max-width: 800px;
             margin: 0 auto;
-            padding: 120px 20px 60px;
+            padding: 20px;
+            line-height: 1.6;
         }
-        .legal-content h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
+        .policy-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+            color: #333;
         }
-        .legal-content h2 {
-            font-size: 28px;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            color: var(--primary-color);
+        .policy-content h2 {
+            font-size: 1.8em;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            color: #444;
         }
-        .legal-content h3 {
-            font-size: 22px;
-            margin-top: 30px;
-            margin-bottom: 15px;
+        .policy-content h3 {
+            font-size: 1.3em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+            color: #555;
         }
-        .legal-content p, .legal-content li {
-            line-height: 1.8;
-            color: var(--text-secondary);
-            margin-bottom: 15px;
+        .policy-content p {
+            margin-bottom: 1em;
         }
-        .legal-content ul {
-            margin-left: 30px;
-            margin-bottom: 20px;
+        .policy-content ul {
+            margin-bottom: 1em;
+            padding-left: 2em;
         }
-        .last-updated {
-            color: var(--text-secondary);
+        .policy-content li {
+            margin-bottom: 0.5em;
+        }
+        .policy-content em {
             font-style: italic;
-            margin-bottom: 40px;
+        }
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #666;
+        }
+        .error {
+            text-align: center;
+            padding: 50px;
+            color: #d32f2f;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none;">
-                    <img src="assets/images/app-icon.png" alt="Supanator Logo" class="nav-logo">
-                    <span class="nav-title">Supanator</span>
-                </a>
-            </div>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">Supanator</a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
                 <a href="index.html#features">Features</a>
-                <a href="index.html#pricing">Pricing</a>
+                <a href="index.html#download">Download</a>
                 <a href="privacy-policy.html">Privacy</a>
                 <a href="terms-of-service.html">Terms</a>
             </div>
         </div>
     </nav>
 
-    <div class="legal-content">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: January 19, 2025</p>
+    <main>
+        <div class="policy-content" id="content">
+            <div class="loading">Loading privacy policy...</div>
+        </div>
+    </main>
 
-        <h2>1. Introduction</h2>
-        <p>This Privacy Policy describes how Supanator ("we," "our," or "the app") collects, uses, and protects your information when you use our iOS application. By using Supanator, you agree to the collection and use of information in accordance with this policy.</p>
-
-        <h2>2. Information We Collect</h2>
-        
-        <h3>2.1 Information You Provide</h3>
-        <ul>
-            <li><strong>Supabase API Tokens</strong>: We collect the experimental API tokens, management tokens, and service role keys you provide to connect to your Supabase projects</li>
-            <li><strong>Project URLs</strong>: The URLs of your Supabase projects</li>
-            <li><strong>Token Names</strong>: Optional names you assign to saved tokens for your convenience</li>
-            <li><strong>Feedback Information</strong>: When you send feedback through the app, we collect your email address and feedback message</li>
-        </ul>
-
-        <h3>2.2 Automatically Collected Information</h3>
-        <ul>
-            <li><strong>Usage Data</strong>: Basic app usage statistics (features used, crash reports)</li>
-            <li><strong>Device Information</strong>: iOS version, device model, app version</li>
-        </ul>
-
-        <h3>2.3 Information We Do NOT Collect</h3>
-        <ul>
-            <li>Personal identification information (name, phone number)</li>
-            <li>Location data</li>
-            <li>Contact information (except when voluntarily provided for feedback)</li>
-            <li>Payment information (handled by Apple App Store)</li>
-        </ul>
-
-        <h2>3. How We Use Your Information</h2>
-        <p>We use the collected information solely to:</p>
-        <ul>
-            <li>Authenticate and connect to your Supabase projects</li>
-            <li>Enable app functionality (database management, storage, functions, etc.)</li>
-            <li>Save your preferences locally on your device</li>
-            <li>Improve app performance and fix bugs</li>
-            <li>Respond to your feedback and support requests</li>
-        </ul>
-
-        <h2>4. Data Storage and Security</h2>
-        
-        <h3>4.1 Local Storage</h3>
-        <ul>
-            <li>All API tokens and credentials are stored locally on your device using iOS Keychain</li>
-            <li>We do NOT transmit or store your credentials on any external servers</li>
-            <li>Data is encrypted using iOS native security features</li>
-        </ul>
-
-        <h3>4.2 Fresh Install Detection</h3>
-        <ul>
-            <li>Uninstalling the app will clear all stored credentials upon reinstallation</li>
-            <li>This ensures your sensitive data doesn't persist after app removal</li>
-        </ul>
-
-        <h3>4.3 Widget Data</h3>
-        <ul>
-            <li>Analytics data for widgets is stored in a secure app group container</li>
-            <li>Only accessible by the main app and widget extension</li>
-        </ul>
-
-        <h2>5. Third-Party Services</h2>
-        
-        <h3>5.1 Supabase</h3>
-        <ul>
-            <li>Supanator connects directly to Supabase services using your provided credentials</li>
-            <li>All data interactions occur directly between your device and Supabase servers</li>
-            <li>We do not intercept, store, or process your Supabase data</li>
-            <li>Your use of Supabase is governed by Supabase's own privacy policy and terms of service</li>
-        </ul>
-
-        <h3>5.2 Apple Services</h3>
-        <ul>
-            <li>App Store for distribution and in-app purchases</li>
-            <li>StoreKit for subscription management</li>
-            <li>Your subscription data is managed by Apple</li>
-        </ul>
-
-        <h3>5.3 Formspree</h3>
-        <ul>
-            <li>Used for processing feedback submissions</li>
-            <li>Only your email and feedback message are sent to Formspree</li>
-            <li>Formspree's privacy policy applies to feedback submissions</li>
-        </ul>
-
-        <h2>6. Data Sharing</h2>
-        <p>We do NOT:</p>
-        <ul>
-            <li>Sell, trade, or rent your information to third parties</li>
-            <li>Share your credentials with anyone</li>
-            <li>Access your Supabase data for any purpose other than app functionality</li>
-            <li>Collect or store analytics about your Supabase projects</li>
-        </ul>
-
-        <h2>7. Your Rights</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Delete all stored credentials at any time through the app</li>
-            <li>Uninstall the app to remove all local data</li>
-            <li>Manage your subscriptions through iOS Settings</li>
-            <li>Request information about data stored locally on your device</li>
-        </ul>
-
-        <h2>8. Children's Privacy</h2>
-        <p>Supanator is not intended for use by children under 13 years of age. We do not knowingly collect information from children under 13.</p>
-
-        <h2>9. Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
-        <h2>10. Contact Information</h2>
-        <p>For questions about this Privacy Policy or the app, please contact:</p>
-        <ul>
-            <li>Email: support@supanator.app</li>
-            <li>GitHub Issues: <a href="https://github.com/Jeramo/supanator/issues">https://github.com/Jeramo/supanator/issues</a></li>
-        </ul>
-
-        <h2>11. Disclaimer</h2>
-        <p><strong>Remember</strong>: Supanator is an unofficial, third-party client for Supabase. Not affiliated with or endorsed by Supabase Inc. Use at your own discretion and risk.</p>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2024 Supanator. All rights reserved.</p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Supanator</h3>
+                <p>The unofficial Supabase client for iOS</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-of-service.html">Terms of Service</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <a href="mailto:support@supanator.app">support@supanator.app</a>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Supanator. All rights reserved.</p>
+            <p class="disclaimer">Supanator is an independent app and is not affiliated with Supabase Inc.</p>
+        </div>
     </footer>
+
+    <script>
+        async function loadPrivacyPolicy() {
+            const contentDiv = document.getElementById('content');
+            
+            try {
+                const response = await fetch('Privacy Policy.txt');
+                if (!response.ok) {
+                    throw new Error('Failed to load privacy policy');
+                }
+                
+                const text = await response.text();
+                const html = parseMarkdown(text);
+                contentDiv.innerHTML = html;
+            } catch (error) {
+                contentDiv.innerHTML = '<div class="error">Error loading privacy policy. Please try again later.</div>';
+                console.error('Error:', error);
+            }
+        }
+
+        function parseMarkdown(text) {
+            // Split into lines
+            const lines = text.split('\n');
+            let html = '';
+            let inList = false;
+            
+            for (let line of lines) {
+                // Trim whitespace
+                line = line.trim();
+                
+                // Skip empty lines unless we're in a list
+                if (!line && !inList) {
+                    continue;
+                }
+                
+                // End list if we hit an empty line
+                if (!line && inList) {
+                    html += '</ul>';
+                    inList = false;
+                    continue;
+                }
+                
+                // Headers
+                if (line.startsWith('### ')) {
+                    if (inList) {
+                        html += '</ul>';
+                        inList = false;
+                    }
+                    html += `<h3>${parseBoldText(line.substring(4))}</h3>`;
+                } else if (line.startsWith('## ')) {
+                    if (inList) {
+                        html += '</ul>';
+                        inList = false;
+                    }
+                    html += `<h2>${parseBoldText(line.substring(3))}</h2>`;
+                } else if (line.startsWith('# ')) {
+                    if (inList) {
+                        html += '</ul>';
+                        inList = false;
+                    }
+                    html += `<h1>${parseBoldText(line.substring(2))}</h1>`;
+                } 
+                // List items
+                else if (line.startsWith('- ')) {
+                    if (!inList) {
+                        html += '<ul>';
+                        inList = true;
+                    }
+                    html += `<li>${parseBoldText(line.substring(2))}</li>`;
+                } 
+                // Regular paragraphs
+                else {
+                    if (inList) {
+                        html += '</ul>';
+                        inList = false;
+                    }
+                    html += `<p>${parseBoldText(line)}</p>`;
+                }
+            }
+            
+            // Close any open list
+            if (inList) {
+                html += '</ul>';
+            }
+            
+            return html;
+        }
+
+        function parseBoldText(text) {
+            // Replace **text** with <em>text</em> for italic
+            return text.replace(/\*\*(.*?)\*\*/g, '<em>$1</em>');
+        }
+
+        // Load the privacy policy when the page loads
+        loadPrivacyPolicy();
+    </script>
 </body>
 </html> 

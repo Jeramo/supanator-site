@@ -1,0 +1,149 @@
+# Privacy Policy for Supanator
+
+**Effective Date: January 19, 2025**
+
+## 1. Introduction
+
+This Privacy Policy describes how Supanator ("we," "our," or "the app") collects, uses, and protects your information when you use our iOS application. By using Supanator, you agree to the collection and use of information in accordance with this policy.
+
+## 2. Information We Collect
+
+### 2.1 Information You Provide
+- **Supabase API Tokens**: We collect the experimental API tokens, management tokens, and service role keys you provide to connect to your Supabase projects
+- **Project URLs**: The URLs of your Supabase projects
+- **Token Names**: Optional names you assign to saved tokens for your convenience
+
+### 2.2 Automatically Collected Information
+- **Usage Data**: Basic app usage statistics (features used, crash reports)
+- **Device Information**: iOS version, device model, app version
+
+### 2.3 Information We Do NOT Collect
+- Personal identification information (name, email, phone number)
+- Location data
+- Contact information
+- Payment information (handled by Apple App Store)
+
+## 3. How We Use Your Information
+
+We use the collected information solely to:
+- Authenticate and connect to your Supabase projects
+- Enable app functionality (database management, storage, functions, etc.)
+- Save your preferences locally on your device
+- Improve app performance and fix bugs
+
+## 4. Data Storage and Security
+
+### 4.1 Local Storage
+- All API tokens and credentials are stored locally on your device using iOS Keychain
+- We do NOT transmit or store your credentials on any external servers
+- Data is encrypted using iOS native security features
+
+### 4.2 Fresh Install Detection
+- Uninstalling the app will clear all stored credentials upon reinstallation
+- This ensures your sensitive data doesn't persist after app removal
+
+### 4.3 Widget Data
+- Analytics data for widgets is stored in a secure app group container
+- Only accessible by the main app and widget extension
+
+## 5. Third-Party Services
+
+### 5.1 Supabase
+- Supanator connects directly to Supabase services using your provided credentials
+- All data interactions occur directly between your device and Supabase servers
+- We do not intercept, store, or process your Supabase data
+- Your use of Supabase is governed by Supabase's own privacy policy and terms of service
+
+### 5.2 Apple Services
+- App Store for distribution and in-app purchases
+- StoreKit for subscription management
+- Your subscription data is managed by Apple
+
+## 6. Data Sharing
+
+We do NOT:
+- Sell, trade, or rent your information to third parties
+- Share your credentials with anyone
+- Access your Supabase data for any purpose other than app functionality
+- Collect or store analytics about your Supabase projects
+
+## 7. Your Rights
+
+You have the right to:
+- Delete all stored credentials at any time through the app
+- Uninstall the app to remove all local data
+- Manage your subscriptions through iOS Settings
+- Request information about data stored locally on your device
+
+## 8. Children's Privacy
+
+Supanator is not intended for use by children under 13 years of age. We do not knowingly collect information from children under 13.
+
+## 9. Disclaimer and Limitation of Liability
+
+### 9.1 No Warranty
+SUPANATOR IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+### 9.2 Limitation of Liability
+IN NO EVENT SHALL THE DEVELOPER OF SUPANATOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE APP OR THE USE OR OTHER DEALINGS IN THE APP.
+
+### 9.3 User Responsibility
+- You are solely responsible for maintaining the security of your API tokens
+- You are responsible for any actions taken using your Supabase credentials
+- We are not liable for any data loss, security breaches, or damages resulting from your use of the app
+- You use this app at your own risk
+
+### 9.4 Third-Party Services
+- We are not responsible for the availability, accuracy, or reliability of Supabase services
+- We are not liable for any issues arising from Supabase service interruptions or changes
+- Your relationship with Supabase is governed by their terms, not ours
+
+### 9.5 No Professional Advice
+This app is not intended to provide professional database administration advice. Always consult with qualified professionals for critical database operations.
+
+## 10. Indemnification
+
+You agree to indemnify, defend, and hold harmless the developer of Supanator from and against any and all claims, liabilities, damages, losses, costs, expenses, or fees arising from your use of the app or violation of these terms.
+
+## 11. Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by updating the "Effective Date" at the top of this policy. Continued use of the app after changes constitutes acceptance of the updated policy.
+
+## 12. Data Retention
+
+- Credentials remain stored until you explicitly delete them or uninstall the app
+- We do not have access to delete your data remotely
+- Subscription information is retained by Apple according to their policies
+
+## 13. International Use
+
+This app is designed for use globally. By using Supanator outside of your country, you consent to the transfer and processing of your data in accordance with this policy.
+
+## 14. Open Source
+
+Supanator's source code is available on GitHub. However, this does not grant any rights to:
+- Use the Supanator name or branding
+- Redistribute the app on app stores
+- Claim affiliation with the original developer
+
+## 15. Contact Information
+
+For questions about this Privacy Policy or the app, please contact:
+- GitHub Issues: https://github.com/Jeramo/supanator/issues
+- App Store: Through the App Store support feature
+
+## 16. Acceptance of Terms
+
+By using Supanator, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy and accept all risks associated with using the app.
+
+## 17. Severability
+
+If any provision of this Privacy Policy is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that this Privacy Policy will otherwise remain in full force and effect.
+
+## 18. Governing Law
+
+This Privacy Policy is governed by the laws applicable to software distributed through the Apple App Store, without regard to conflict of law principles.
+
+---
+
+**Remember**: Supanator is an independent tool not affiliated with Supabase Inc. Use at your own discretion and risk.
