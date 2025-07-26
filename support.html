@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Supanator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .support-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .contact-section, .faq-section {
+            margin-bottom: 4rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007AFF;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-button {
+            background-color: #007AFF;
+            color: white;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .submit-button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        
+        .faq-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .faq-item:hover {
+            transform: translateY(-2px);
+        }
+        
+        .faq-question {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-answer {
+            color: #666;
+            line-height: 1.6;
+            display: none;
+            padding-top: 0.5rem;
+        }
+        
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        
+        .faq-item.active .chevron {
+            transform: rotate(180deg);
+        }
+        
+        .chevron {
+            transition: transform 0.3s;
+        }
+        
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/images/app-icon.png" alt="Supanator Logo" class="nav-logo">
+                <span class="nav-title">Supanator</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="support.html" class="active">Support</a>
+                <a href="privacy-policy.html">Privacy</a>
+                <a href="terms-of-service.html">Terms</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="support-container">
+        <h1>Support Center</h1>
+        
+        <div class="contact-section">
+            <h2>Contact Us</h2>
+            <div id="success-message" class="success-message">
+                Thank you for your message! We'll get back to you soon.
+            </div>
+            <div id="error-message" class="error-message">
+                There was an error sending your message. Please try again.
+            </div>
+            
+            <form id="contact-form" action="https://formspree.io/f/xnnzpeew" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="type">Type</label>
+                    <select id="type" name="type" required>
+                        <option value="">Select a type</option>
+                        <option value="General feedback">General feedback</option>
+                        <option value="Bug report">Bug report</option>
+                        <option value="Feature request">Feature request</option>
+                        <option value="Technical support">Technical support</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What is Supanator?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Supanator is an independent client application for managing Supabase projects. It provides a mobile-friendly interface to interact with your Supabase databases, storage, Edge functions, and more.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    How do I connect to my Supabase project?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    You can connect using your experimental API token, which allows automatic project discovery. Alternatively, you can use your project URL and service role key for direct connection.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Is my data secure?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, all connections are made directly to your Supabase project using secure HTTPS. We don't save any token data. Please refer to our privacy policy.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Where do I get my experimental API token?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    You can get your experimental API token from your Supabase Dashboard under Settings > API. Look for the 'Experimental' section and copy the token that starts with 'sbp_v0_'.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Why can't I see my projects?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Make sure your experimental API token is correct and has the necessary permissions. Some tokens may have limited access to project discovery features.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Why can't I see my Edge functions?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Edge functions need to be deployed to your Supabase project first. Use the Supabase CLI or Dashboard to deploy functions. They will then appear in the Edge functions tab.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    What features require a Pro subscription?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    Pro features include SQL editor, storage management, edge functions, and analytics. The basic tables view is always free.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    Is Supanator affiliated with Supabase?
+                    <span class="chevron">▼</span>
+                </div>
+                <div class="faq-answer">
+                    No, Supanator is an independent application created by a third-party developer. It is not affiliated with or endorsed by Supabase Inc.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Supanator</h4>
+                    <p>The native Supabase client for iOS. Manage your projects on the go.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>For support inquiries, please use our <a href="support.html">contact form</a>.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Supanator. All rights reserved. Not affiliated with Supabase Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+
+        // Form submission handling
+        const form = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        const errorMessage = document.getElementById('error-message');
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const submitButton = form.querySelector('.submit-button');
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    successMessage.style.display = 'block';
+                    errorMessage.style.display = 'none';
+                    form.reset();
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.style.display = 'none';
+                    }, 5000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                errorMessage.style.display = 'block';
+                successMessage.style.display = 'none';
+                
+                // Hide error message after 5 seconds
+                setTimeout(() => {
+                    errorMessage.style.display = 'none';
+                }, 5000);
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+            }
+        });
+
+        // Email validation
+        const emailInput = document.getElementById('email');
+        emailInput.addEventListener('blur', () => {
+            const email = emailInput.value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+            
+            if (email && !emailRegex.test(email)) {
+                emailInput.setCustomValidity('Please enter a valid email address');
+            } else {
+                emailInput.setCustomValidity('');
+            }
+        });
+    </script>
+</body>
+</html> 
