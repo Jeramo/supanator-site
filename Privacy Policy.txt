@@ -119,28 +119,21 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 This app is designed for use globally. By using Supanator outside of your country, you consent to the transfer and processing of your data in accordance with this policy.
 
-## 14. Open Source
-
-Supanator's source code is available on GitHub. However, this does not grant any rights to:
-- Use the Supanator name or branding
-- Redistribute the app on app stores
-- Claim affiliation with the original developer
-
-## 15. Contact Information
+## 14. Contact Information
 
 For questions about this Privacy Policy or the app, please contact:
 - GitHub Issues: https://github.com/Jeramo/supanator/issues
 - App Store: Through the App Store support feature
 
-## 16. Acceptance of Terms
+## 15. Acceptance of Terms
 
 By using Supanator, you acknowledge that you have read, understood, and agree to be bound by this Privacy Policy and accept all risks associated with using the app.
 
-## 17. Severability
+## 16. Severability
 
 If any provision of this Privacy Policy is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary so that this Privacy Policy will otherwise remain in full force and effect.
 
-## 18. Governing Law
+## 17. Governing Law
 
 This Privacy Policy is governed by the laws applicable to software distributed through the Apple App Store, without regard to conflict of law principles.
 
