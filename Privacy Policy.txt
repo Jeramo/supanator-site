@@ -122,7 +122,8 @@ This app is designed for use globally. By using Supanator outside of your countr
 ## 14. Contact Information
 
 For questions about this Privacy Policy or the app, please contact:
-- GitHub Issues: https://github.com/Jeramo/supanator/issues
+- Email: jean.robert.nino@icloud.com
+- Through the in-app contact form
 - App Store: Through the App Store support feature
 
 ## 15. Acceptance of Terms
