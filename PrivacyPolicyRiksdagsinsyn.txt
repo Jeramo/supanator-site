@@ -10,13 +10,13 @@ Riksdagsinsyn ("appen", "vi", "vår") respekterar din integritet och är engager
 
 ### 2.1 Automatiskt genererad information
 
-#### Användar-ID
+Användar-ID
 - **Vad**: Ett unikt, slumpmässigt genererat ID (UUID)
 - **Varför**: För att hantera AI-mynt och förhindra missbruk
 - **Lagring**: Lokalt på enheten och i iCloud Keychain för synkronisering mellan dina enheter
 - **Delning**: Skickas till vår server endast vid AI-sammanfattningar och mynthantering
 
-#### Användningsstatistik
+Användningsstatistik
 - **Vad**: Antal AI-sammanfattningar per timme/dag
 - **Varför**: För att upprätthålla rättvisa användningsgränser
 - **Lagring**: Temporärt på servern (max 24 timmar)
@@ -24,12 +24,12 @@ Riksdagsinsyn ("appen", "vi", "vår") respekterar din integritet och är engager
 
 ### 2.2 Information du tillhandahåller
 
-#### Favoriter och bokmärken
+Favoriter och bokmärken
 - **Vad**: Ledamöter, partier, dokument och anföranden du markerar som favoriter
 - **Lagring**: Endast lokalt på din enhet
 - **Delning**: Delas aldrig med vår server eller tredje part
 
-#### AI-sammanfattningar
+AI-sammanfattningar
 - **Vad**: Genererade sammanfattningar av riksdagsdokument
 - **Lagring**: Lokalt på din enhet
 - **Delning**: Texten skickas temporärt till Cloudflare Workers AI för bearbetning, men lagras inte permanent
@@ -55,7 +55,7 @@ När du begär en AI-sammanfattning:
 5. Endast anonymiserad användningsstatistik behålls
 
 ### 3.2 Mynthantering (AI Mynt)
-- Ditt användar-ID används för att:
+Ditt användar-ID används för att:
   - Hålla reda på ditt myntsaldo
   - Förhindra missbruk genom hastighetsbegränsningar
   - Hantera köp via App Store
@@ -124,7 +124,6 @@ Du kan radera din data genom att:
 - Rensa favoriter via inställningar
 - Rensa sammanfattningar via inställningar
 - Avinstallera appen (raderar all lokal data)
-- Kontakta oss för radering av serverdata
 
 ### 6.3 Dataportabilitet
 - Lokal data kan säkerhetskopieras via iTunes/iCloud
@@ -155,14 +154,7 @@ Vi kan uppdatera denna integritetspolicy från tid till annan. Vi meddelar dig o
 
 För frågor om denna integritetspolicy eller vår datahantering, kontakta:
 
-**E-post**: [din-email@exempel.se]  
-**Hemsida**: [din-hemsida.se]
-
-### Ansvarig för personuppgiftsbehandling:
-[Ditt namn/företagsnamn]  
-[Adress]  
-[Postnummer och ort]  
-Sverige
+**E-post**: jean.robert.nino@icloud.com
 
 ## 11. Juridisk grund och efterlevnad
 
@@ -194,6 +186,7 @@ Denna app följer:
 - Valfritt och kan när som helst stängas av
 - Används endast för att meddela om nya dokument från dina favoriter
 - Ingen personlig information i notiser
+- Information om favoriserade ledamöter/dokument/tal sparas inte på vår server
 
 ## 13. Dataminimering
 
@@ -210,6 +203,6 @@ Vi är transparenta om:
 - Källkoden för serverdelen är dokumenterad
 - Alla tredjepartstjänster är tydligt listade
 
----
+--
 
 **Sammanfattning**: Riksdagsinsyn prioriterar din integritet. Vi samlar endast in minimal, nödvändig information för att tillhandahålla AI-sammanfattningar och förhindra missbruk. All personlig data lagras lokalt på din enhet, och endast anonymiserad användningsstatistik delas med vår server. Du har full kontroll över din data och kan när som helst radera den.
