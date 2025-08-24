@@ -1,0 +1,207 @@
+
+Senast uppdaterad: 2025-08-15
+
+## 1. Introduktion
+
+Riksdagsinsyn ("appen", "vi", "vår") respekterar din integritet och är engagerad i att skydda dina personuppgifter. Denna integritetspolicy förklarar hur vi samlar in, använder, lagrar och skyddar din information när du använder vår iOS-applikation.
+
+## 2. Information vi samlar in
+
+### 2.1 Automatiskt genererad information
+
+Användar-ID
+- **Vad**: Ett unikt, slumpmässigt genererat ID (UUID)
+- **Varför**: För att hantera AI-mynt och förhindra missbruk
+- **Lagring**: Lokalt på enheten och i iCloud Keychain för synkronisering mellan dina enheter
+- **Delning**: Skickas till vår server endast vid AI-sammanfattningar och mynthantering
+
+Användningsstatistik
+- **Vad**: Antal AI-sammanfattningar per timme/dag
+- **Varför**: För att upprätthålla rättvisa användningsgränser
+- **Lagring**: Temporärt på servern (max 24 timmar)
+- **Delning**: Används endast internt, delas aldrig med tredje part
+
+### 2.2 Information du tillhandahåller
+
+Favoriter och bokmärken
+- **Vad**: Ledamöter, partier, dokument och anföranden du markerar som favoriter
+- **Lagring**: Endast lokalt på din enhet
+- **Delning**: Delas aldrig med vår server eller tredje part
+
+AI-sammanfattningar
+- **Vad**: Genererade sammanfattningar av riksdagsdokument
+- **Lagring**: Lokalt på din enhet
+- **Delning**: Texten skickas temporärt till Cloudflare Workers AI för bearbetning, men lagras inte permanent
+
+### 2.3 Information vi INTE samlar in
+- Namn eller personlig identifieringsinformation
+- E-postadress
+- Telefonnummer
+- Platsdata
+- Kontakter
+- Foton eller mediabibliotek
+- Webbläsarhistorik
+- Enhets-ID eller reklamidentifierare
+
+## 3. Hur vi använder information
+
+### 3.1 AI-sammanfattningar
+När du begär en AI-sammanfattning:
+1. Dokumenttexten skickas till Cloudflare Workers AI
+2. Texten bearbetas för att skapa en sammanfattning
+3. Sammanfattningen returneras till din enhet
+4. Originaltexten raderas omedelbart från servern
+5. Endast anonymiserad användningsstatistik behålls
+
+### 3.2 Mynthantering (AI Mynt)
+Ditt användar-ID används för att:
+  - Hålla reda på ditt myntsaldo
+  - Förhindra missbruk genom hastighetsbegränsningar
+  - Hantera köp via App Store
+
+### 3.3 Förbättring av tjänsten
+Anonymiserad, aggregerad data används för att:
+- Övervaka systemets prestanda
+- Identifiera och förhindra missbruk
+- Planera kapacitetsuppgraderingar
+- Förbättra AI-sammanfattningarnas kvalitet
+
+## 4. Datadelning och tredje parter
+
+### 4.1 Cloudflare Workers AI
+- **Syfte**: Generera AI-sammanfattningar
+- **Data som delas**: Temporär dokumenttext (raderas omedelbart efter bearbetning)
+- **Plats**: Cloudflares globala nätverk
+- **Säkerhet**: End-to-end kryptering via HTTPS
+
+### 4.2 Riksdagens öppna data
+- **Syfte**: Hämta riksdagsinformation
+- **Data som delas**: Inga personuppgifter, endast sökfrågor
+- **Källa**: data.riksdagen.se (offentlig API)
+
+### 4.3 RevenueCat
+- **Syfte**: Hantera köp i appen
+- **Data som delas**: Anonymt användar-ID, köphistorik
+- **Integritetspolicy**: https://www.revenuecat.com/privacy
+
+### 4.4 Apple Services
+- **iCloud**: För synkronisering av användar-ID mellan dina enheter
+- **App Store**: För köphantering
+- **StoreKit**: För transaktionsverifiering
+
+## 5. Datalagring och säkerhet
+
+### 5.1 Lokal lagring
+- **Plats**: Din iPhone/iPad
+- **Innehåll**: Favoriter, sammanfattningar, cachad riksdagsdata
+- **Säkerhet**: Skyddas av iOS sandboxing och enhetskryptering
+- **Radering**: Du kan när som helst rensa all lokal data via appens inställningar
+
+### 5.2 Serverlagring
+- **Plats**: Cloudflare Workers KV (distribuerad databas)
+- **Innehåll**: Användar-ID, myntsaldo, användningsstatistik
+- **Säkerhet**: Krypterad i vila och under överföring
+- **Bevarande**: Användningsstatistik raderas automatiskt efter 24-30 dagar
+
+### 5.3 Säkerhetsåtgärder
+- HTTPS-kryptering för all nätverkskommunikation
+- Hastighetsbegränsningar för att förhindra missbruk
+- Automatisk detektering av onormala användningsmönster
+- Ingen lagring av känslig information
+- Regelbundna säkerhetsuppdateringar
+
+## 6. Dina rättigheter
+
+### 6.1 Tillgång till data
+Du kan se all din lokalt lagrade data direkt i appen:
+- Favoriter via favoritskärmen
+- Sammanfattningar via sammanfattningsvyn
+- Användningsstatistik via inställningar
+
+### 6.2 Radering av data
+Du kan radera din data genom att:
+- Rensa favoriter via inställningar
+- Rensa sammanfattningar via inställningar
+- Avinstallera appen (raderar all lokal data)
+
+### 6.3 Dataportabilitet
+- Lokal data kan säkerhetskopieras via iTunes/iCloud
+- Serverdata är minimal och kan begäras via e-post
+
+### 6.4 Återkallande av samtycke
+Du kan när som helst sluta använda AI-funktioner som kräver serveranslutning
+
+## 7. Barn
+
+Vår app är lämplig för alla åldrar och samlar inte medvetet in personuppgifter från barn under 13 år. Appen kräver ingen registrering eller personlig information.
+
+## 8. Internationella överföringar
+
+Din data kan behandlas på servrar i:
+- EU (Cloudflare Workers)
+- USA (RevenueCat för köphantering)
+
+All dataöverföring sker i enlighet med tillämpliga dataskyddslagar.
+
+## 9. Ändringar i denna policy
+
+Vi kan uppdatera denna integritetspolicy från tid till annan. Vi meddelar dig om väsentliga ändringar genom:
+- En notis i appen
+- Uppdatering av "Senast uppdaterad"-datumet
+
+## 10. Kontakta oss
+
+För frågor om denna integritetspolicy eller vår datahantering, kontakta:
+
+**E-post**: jean.robert.nino@icloud.com
+
+## 11. Juridisk grund och efterlevnad
+
+### 11.1 Rättslig grund (GDPR)
+Vår behandling av personuppgifter baseras på:
+- **Berättigat intresse**: För att tillhandahålla och förbättra tjänsten
+- **Avtal**: För att leverera köpta AI-mynt
+- **Samtycke**: För valfria funktioner som push-notiser
+
+### 11.2 Efterlevnad
+Denna app följer:
+- EU:s dataskyddsförordning (GDPR)
+- Svensk dataskyddslagstiftning
+- Apples riktlinjer för apputvecklare
+- Cloudflares dataskyddspolicy
+
+## 12. Teknisk information
+
+### 12.1 Cookies och spårning
+- Appen använder INTE cookies
+- Ingen spårning över appar eller webbplatser
+- Ingen reklamidentifiering
+
+### 12.2 Analytics
+- Endast anonymiserad, aggregerad användningsstatistik
+- Ingen tredjepartsanalys (Google Analytics, Facebook, etc.)
+
+### 12.3 Push-notiser
+- Valfritt och kan när som helst stängas av
+- Används endast för att meddela om nya dokument från dina favoriter
+- Ingen personlig information i notiser
+- Information om favoriserade ledamöter/dokument/tal sparas inte på vår server
+
+## 13. Dataminimering
+
+Vi följer principen om dataminimering:
+- Samlar endast in data som är nödvändig för tjänstens funktion
+- Raderar automatiskt gammal användningsstatistik
+- Lagrar inte personuppgifter längre än nödvändigt
+
+## 14. Transparens
+
+Vi är transparenta om:
+- All data som samlas in visas i denna policy
+- Du kan se din användningsstatistik i appen
+- Källkoden för serverdelen är dokumenterad
+- Alla tredjepartstjänster är tydligt listade
+
+--
+
+**Sammanfattning**: Riksdagsinsyn prioriterar din integritet. Vi samlar endast in minimal, nödvändig information för att tillhandahålla AI-sammanfattningar och förhindra missbruk. All personlig data lagras lokalt på din enhet, och endast anonymiserad användningsstatistik delas med vår server. Du har full kontroll över din data och kan när som helst radera den.
