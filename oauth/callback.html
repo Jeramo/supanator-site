@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Supanator OAuth Redirect</title>
+  </head>
+  <body>
+    <noscript>JavaScript is required to complete sign-in.</noscript>
+    <script>
+      (function () {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const code = params.get('code') || '';
+          const state = params.get('state') || '';
+          if (!code || !state) {
+            document.body.textContent = 'Missing code or state.';
+            return;
+          }
+          const target = `supanator://oauth/callback?code=${encodeURIComponent(code)}&state=${encodeURIComponent(state)}`;
+          window.location.replace(target);
+        } catch (e) {
+          console.error('Redirect error', e);
+          document.body.textContent = 'Redirect failed.';
+        }
+      })();
+    </script>
+  </body>
+  </html>
+
+
